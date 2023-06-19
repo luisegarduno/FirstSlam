@@ -1,2 +1,2 @@
-# FirstSlam
+# TrySlam
 First attempt at SLAM
