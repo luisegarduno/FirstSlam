@@ -15,8 +15,11 @@ def process_frame(img):
 
     # find the keypoints & compute the descriptors w/ ORB
     kps, des, matches = fe.extract(img)
+    if matches is None:
+        return
 
     for p in kps:
+        print(p)
         u,v = map(lambda x: int(round(x)), p.pt)
         cv2.circle(img, (u,v), color=(0,255,0), radius=3)
 
