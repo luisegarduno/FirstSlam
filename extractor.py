@@ -1,7 +1,6 @@
 import cv2
 import numpy as np
 
-
 class Extractor(object):
     # detection
     def __init__(self):
